@@ -12,12 +12,24 @@ body {
   font-family: "Montserrat", serif;
 }
 
+#navigation {
+  width: 100%;
+  height: 3rem;
+  background-color: #DABDAD;
+}
+
+#navigation a {
+  font-size: 80%;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+
 /* use cookie image as background to the title banner div */
 #titleBanner {
   position: relative;
   width: 100%;
   height: 50vh;
-  background-image: url(frenchtoast.jpg);
+  background-image: none; /* (frenchtoast.jpg); */
   background-size: cover;
   background-position: center center;
   box-shadow: 0px 3px 3px rgba(0,0,0,0.7);
@@ -49,6 +61,13 @@ body {
 
 #titleBanner h1.tp6 {
 	color: black;
+}
+
+#titleBanner h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: black;
 }
 
 /* make the 3 recipe columns display using a flexbox method */
@@ -99,7 +118,7 @@ ul, ol {
   text-transform: uppercase;
   font-size: 130%;
   margin: 0;
-  color: #F0DF60;
+  color: #D49A6A;
 }
 
 /* set the text color of the footer and the link in it */

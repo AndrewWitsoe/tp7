@@ -25,29 +25,3 @@ function loadFileInto(fromFile, whereTo) {
 	ajax.send();
 
 }
-
-
-window.onload = function() {
-  
-    loadFileInto("ingredients.html", "#ingredients ul")
-    loadFileInto("equipment.html", "#equipment ul")
-    loadFileInto("directions.html", "#directions ol")
-  
-  document.querySelector("#titleBanner h1").classList.add("tp");
-  
-  document.querySelector("#titleBanner h1").onclick = function() {
-    this.classList.toggle("orange");
-  }
-  
-  document.querySelector("#recipeColumns #ingredients").onclick = function() {
-    this.classList.toggle("tpShow");
-  }
-  document.querySelector("#recipeColumns #equipment").onclick = function() {
-    this.classList.toggle("tpShow");
-  }
-  document.querySelector("#recipeColumns #directions").onclick = function() {
-    this.classList.toggle("tpShow");
-  }
-  document.querySelector("#recipeColumns #equipment ul").innerHTML += "<li>Hunger</li>";
-  
-} //end the window onload
