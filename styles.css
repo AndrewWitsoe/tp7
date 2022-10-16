@@ -85,20 +85,7 @@ body {
 #recipeColumns div#equipment { flex-basis: 20%; }
 #recipeColumns div#directions { flex-basis: 20%; }
 
-/* hiding columns upon webpage viewing */
 
-#recipeColumns #ingredients ul, 
-#recipeColumns #equipment ul,
-#recipeColumns #directions ol {display: none; }
-
-/* when clicking, the columns will appear */
-
-#recipeColumns #ingredients.tpShow ul,
-#recipeColumns #equipment.tpShow ul,
-#recipeColumns #directions.tpShow ol {
-  display: block;
-  color: black;
-}
 
 
 /* reduce the left-hand padding of the list items */
