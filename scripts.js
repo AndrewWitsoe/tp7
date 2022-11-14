@@ -19,7 +19,7 @@ function loadFileInto(fromFile, whereTo) {
 				console.log("Error: " + this.responseText);
 			}
 		
-	} // end ajax.onreadystatechange function
+	} 
 
 	// initiate request and wait for response
 	ajax.send();
@@ -31,7 +31,7 @@ function loadFileInto(fromFile, whereTo) {
 function Recipe(recipeName, contributorName, imageURL, ingredientsURL, equipmentURL, directionsURL) {
   
   this.recipeName = recipeName;
-  this.contributor =  contributorName;
+  this.contributor = contributorName;
   this.ingredients = ingredientsURL;
   this.equipment = equipmentURL;
   this.directions = directionsURL;
@@ -48,7 +48,7 @@ function Recipe(recipeName, contributorName, imageURL, ingredientsURL, equipment
   }
 }
 
-FrenchToast = new Recipe("French Toast", "Andrew Witsoe", "frenchtoast.jpg", "ingredients.html", "equipment.html", "directions.html");
+FrenchToast = new Recipe("French Toast", "Andrew Witsoe", "https://www.bing.com/images/blob?bcid=sy-KjsXVqeIE0kLrrGkXnjMcPlvX.....x0", "ingredients.html", "equipment.html", "directions.html");
 
 LemonBars = new Recipe("Lemon Bars", "Coby Nelson", "", "LBingredients.html", "LBequipment.html", "LBdirections.html");
 
@@ -56,13 +56,13 @@ SugarCookies = new Recipe("Maple Brown Sugar Cookies", "Kailin Gilzow", "", "SCi
 
 window.onload = function() {
   
-  document.querySelector("first").onclick = function() {
+  document.querySelector("#first").onclick = function() {
     FrenchToast.displayRecipe();
   }
-  document.querySelector("second").onclick = function() {
+  document.querySelector("#second").onclick = function() {
     LemonBars.displayRecipe();
   }
-  document.querySelector("third").onclick = function() {
+  document.querySelector("#third").onclick = function() {
     SugarCookies.displayRecipe();
   }
 }
